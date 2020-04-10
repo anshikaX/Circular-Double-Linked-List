@@ -347,6 +347,10 @@ public class CDLL
         {
             currentNode=currentNode.prev;
             tail.prev=null;
+            if(currentNode==tail)
+            {
+                break;
+            }
         }
         tail.next=null;
         head=null;
